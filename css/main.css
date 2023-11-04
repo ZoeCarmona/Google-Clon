@@ -1,0 +1,198 @@
+body{
+    /* margin: margen del elemento hacia fuera*/
+    margin: 0px; 
+    /* padding: margen del elemento hacia adentro */
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+/**************************************************************/
+/* NAVEGACIÓN */
+header{
+    width: 100%;
+    height: 60px;
+}
+
+/* Accediedno a header y luego a nav */
+header nav{
+    /* Habilita para que los elementos se muevan */
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section{
+    width: 250px;
+    height: auto;
+
+    /* Eliminando puntos de la lista */
+    list-style: none;
+
+    /* Mover lista individualmente */
+    display: flex;
+    justify-content: center;
+    /* Centrado verticalmente */
+    align-items: center;
+}
+
+/* Editando anclas */
+a{
+    text-decoration: none;
+    font-size: 13px;
+}
+
+nav .nav-right-section a{
+    color: rgba(32,33,36,1); 
+    /* Margin right: todos los margenes se ven afectados (estamos creando margen de cada uno de los elementos)
+    Margin top: solo margen en l aparte de arriba*/
+    margin-right: 10px;   
+    /* margin: 10px; */
+}
+
+nav .nav-right-section .yo{
+    width: 40px;
+    border-radius: 100%;
+    margin-left: 20px;
+}
+
+header nav .nav-right-section a:hover{
+    text-decoration: underline;
+}
+
+/* Icono del menú */
+/* Entrando a clase del menú */
+nav .nav-right-section .menu{
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    /* Imagen contenida en el elemento más grande */
+    background-size: 20px; 
+    width: 30px;
+    height: 20px;
+    /* Para no repetir imagen */
+    background-repeat: no-repeat;
+    margin-left: 7px;
+}
+/**************************************************************/
+/* NAVEGACIÓN */
+
+main{
+    /* background-color: black;   Editando seccion*/
+    margin-top: 10%;
+    text-align: center;
+}
+
+main .main-logo{
+    width: 530px;
+    /* Centranfo absolutamente gracias a los margenes automaticos (margen vertical 0 y margen horizontal automatico (automatico es para ajustar a la pagina mientras más pequeña se haga, siempre se queda centrado)) */
+    margin:0 auto;
+}
+
+main .main-logo img{
+    height: 95px;
+}
+
+main .main-input{
+    width: 530px;
+    margin: 0 auto;
+}
+
+main .main-input-container{
+    margin-top: 20px;
+    border: 1px solid #dfe1e5;
+    border-radius: 25px;
+    width: 525px;
+}
+
+main .main-input input{
+    height: 30px;
+    border: none;
+    /* Quitar borde del input al momento del click */
+    outline: none;
+    width: 400px;
+}
+
+main .main-input-container:hover{
+    box-shadow: 1px 1px 1px 1px rgb(211, 211, 211);
+}
+
+main .main-input .search-icon{
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    background-size: contain;
+    padding-left: 8%;
+    background-repeat: no-repeat;
+}
+
+main .main-input .micro-icon{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    background-size: contain;
+    padding-left: 6%;
+    background-repeat: no-repeat;
+}
+
+main .main-input .cam-icon{
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 4%;
+}
+
+main .buttons{
+    margin-top: 20px;
+}
+
+main .buttons button {
+    display: inline-block;
+    margin-right: 30px; 
+    width: 150px;
+    height: 30px;
+    color: black;
+}
+
+main .buttons .boton{
+    background-color: rgb(248, 246, 246); 
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px 20px; 
+}
+
+main .buttons button:hover{
+    box-shadow: 1px 1px 1px 1px rgb(211, 211, 211);
+}
+
+/* ----------------------FOOTER ------------------------*/
+footer{
+    background-color: rgb(248, 247, 247);
+    bottom: 0;
+    /* Poniendo todo en parte de abajo */
+    position: fixed; 
+    width: 100%;
+    margin-top: 100%;
+    text-align: center;
+    padding:0px 0;
+}
+
+footer .top-foot .mex{
+    display: flex;
+    font-size: 13px; 
+    padding: 15px 30px;
+    border-bottom: 1px solid rgb(233, 232, 232);
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #70757a;
+}
+
+footer .bottom-foot{
+    padding: 15px 30px;
+    font-size: 13px; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .bottom-foot a{
+    margin-right: 20px;
+    color: #70757a;
+}
+
+footer .bottom-foot a:hover{
+    text-decoration: underline;
+}

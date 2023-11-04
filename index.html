@@ -1,0 +1,95 @@
+<!--DOCTYPE: signo de exclamacion y enter-->
+<!-- Comentarios: ctrl +k+c -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Clon</title>
+    <!-- Vinculando html con css, href nos dice hacia donde vamos -->
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<!--Sección html que el usuario-->
+<body>
+    <!--Header: ayudas de navegacion (elementos de encabezado)-->
+    <header><!--Contiene navegacion-->
+        <nav><!--Enlace de navegacion-->
+            <ul class="nav-right-section">
+                <!-- Lista no ordenada -->
+                <li>
+                    <!-- a es ancla -->
+                    <a href="https://mail.google.com/mail/&ogbl">Gmail</a>
+                </li>
+                <li>
+                    <a href=https://www.google.com/imghp?hl=es&ogbl">Imágenes</a>
+                </li>
+                <li class="menu">
+                    <a href=""></a>
+                </li>
+                <li>
+                    <a href="https://accounts.google.com/SignOutOptions?hl=es&continue=https://www.google.com/%3Fhl%3Des&ec=GBRAmgQ">
+                        <img class="yo" src="https://lh3.googleusercontent.com/ogw/AKPQZvyx8Bo64z-qCTPYwcjJ_PfcKZ5lvAy9tbFVMUs8dg=s32-c-mo" alt="Imagen de sesión abierta de google">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--Main-->
+    <!-- Vamos a tener 3 secciones: logo google, barra navegadora y buscar y suerte (div y sections son iguales, se usan para cosas diferentes, las secciones se utilizan de forma jerarquica(primero section y despues div))-->
+    <main>
+        <section class="main-logo">
+            <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google Logo">
+        </section>
+
+        <section class="main-input">
+            <div class="main-input-container">
+                <!-- Span es lupa -->
+                <span class="search-icon">
+                </span>
+                <input type="text">
+                <a class="micro-icon" href=""></a>
+                <a class="cam-icon" href=""></a>  
+            </div>
+        </section>
+        <!-- Botones -->
+        <section class="buttons">
+            <div>
+                <button class="boton">Busca con Google</button>
+                <button class="boton">Voy a tener suerte</button>
+            </div>
+        </section>
+    </main>
+    <!--Footer-->
+    <footer>
+        <div class="top-foot">
+            <a class="mex" href="">México</a>
+        </div>
+        <section class="bottom-foot">
+            <div class="right">
+               <a class="sobre"href="https://about.google/?utm_source=google-MX&utm_medium=referral&utm_campaign=hp-footer&fg=1">
+                    Sobre Google
+               </a>
+               <a href="https://www.google.com/intl/es-419_mx/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">
+                    Publicidad
+               </a>
+               <a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">
+                    Negocios
+               </a>
+               <a href="https://google.com/search/howsearchworks/?fg=1">
+                    Cómo funciona la Búsqueda
+               </a>
+            </div>
+            <div class="left">
+                <a href="https://policies.google.com/privacy?hl=es-419&fg=1">
+                    Privacidad
+                </a>
+                <a href="https://policies.google.com/terms?hl=es-419&fg=1">
+                    Condiciones
+                </a>
+                <a href="">Preferencias</a>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
